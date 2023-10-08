@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="main-container">
+                <h1 class="question">Which of these fish is actually a fish ?</h1>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="answer" id="1">
+                        <label class="label" for="1"></label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="answer" id="2">
+                        <label class="label" for="2"></label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="answer" id="3">
+                        <label class="label" for="3"></label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="answer" id="4">
+                        <label class="label" for="4"></label>
+                    </div>
+                </div>
+            </div>
+            <button class="submit" id="submit">Submit</button>
+        </div>
+        <div class="result-container">
+            <h1>Result</h1>
+            <div class="bottom">
+                <h4 style="color: green;">Correct Answers: <span class="correct-answers"></span></h4>
+                <h4 style="color: red;">Wrong Answers: <span class="wrong-answers"></span></h4>
+                <h3>Score: <span class="score"></span></h3>
+            </div>
+            <button class="play-again" onclick="start()">Play Again</button>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

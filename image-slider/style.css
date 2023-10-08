@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: 800px;
+    width: 80%;
+    background-color: rgb(22, 22, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 1rem;
+}
+
+.top {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.frame {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.arrow {
+    color: white;
+    font-size: 300px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons>* {
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.active-btn {
+    background-color: rgb(122, 122, 206);
+}
+
+.slider {
+    display: flex;
+    background-color: red;
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width:700px){
+    img{
+        width: 100px;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sorting-container">
+            <div class="cat-container">
+                <input type="text" placeholder="Search.." class="search-input">
+                <h2>Categories</h2>
+                <ul class="categories">
+                    <li id="all" class="category">All</li>
+                    <li id="mobile" class="category">Mobiles</li>
+                    <li id="watch" class="category">Watches</li>
+                    <li id="computer" class="category">Computers</li>
+                    <li id="other" class="category">Others</li>
+                </ul>
+            </div>
+            <div class="price-controller">
+                <h2>Maximum Price</h2>
+                <input type="range" min="39.992" max="1299.99" step="1" value="1299.99" name="price-range" id="price-range">
+                <label class="price-range-label" for="price-range">$1299.99</label>
+            </div>
+        </div>
+        <div class="products-container">
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
